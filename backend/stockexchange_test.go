@@ -1,6 +1,7 @@
 package backend
 
 import (
+	"errors"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -9,5 +10,14 @@ func TestViewInfoAboutStock(t *testing.T) {
 	stocks := make(map[string]Stock)
 	stocks["AAPL"] = Stock{"Apple", 234.30}
 	nyse := StockExchange{stocks: stocks}
-	assert.Equal(t, "Apple", nyse.ViewInfo("AAPL").name)
+	AAPLStock, _ := nyse.ViewInfo("AAPL")
+	assert.Equal(t, "Apple", AAPLStock.name)
+}
+
+func TestErrorReturnedForStockNotFound(t *testing.T) {
+	stocks := make(map[string]Stock)
+	stocks["AAPL"] = Stock{"Apple", 234.30}
+	nyse := StockExchange{stocks: stocks}
+	_, err := nyse.ViewInfo("ZE")
+	assert.Error(t, errors.New("This stock can not be found in the exchange"), err)
 }
