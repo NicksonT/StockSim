@@ -1,6 +1,7 @@
 package backend
 
 type Stock struct {
-	name  string
-	price float64
+	name   string
+	Symbol string `json:"01. symbol"`
+	Price  string `json:"05. price"`
 }
