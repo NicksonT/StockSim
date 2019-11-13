@@ -1,4 +1,4 @@
-package backend
+package stock
 
 type Stock struct {
 	name   string

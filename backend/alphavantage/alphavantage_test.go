@@ -1,4 +1,4 @@
-package backend
+package alphavantage
 
 import (
 	"github.com/karupanerura/go-mock-http-response"

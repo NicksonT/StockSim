@@ -1,6 +1,8 @@
-package backend
+package stockexchange
 
-import "errors"
+import (
+	"errors"
+)
 
 type StockExchange struct {
 	stocks map[string]Stock
