@@ -3,6 +3,7 @@ package alphavantage
 import (
 	"bytes"
 	"encoding/json"
+	"github.com/NicksonT/StockSim/backend/stock"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -12,7 +13,7 @@ type AlphaVantage struct {
 	APIKey string
 }
 
-func (m *AlphaVantage) GetQuoteOf(s string, st *Stock, c http.Client) {
+func (m *AlphaVantage) GetQuoteOf(s string, st *stock.Stock, c http.Client) {
 	req, err := http.NewRequest("GET", "https://www.alphavantage.co/query?function=GLOBAL_QUOTE", nil)
 	if err != nil {
 		log.Print(err)

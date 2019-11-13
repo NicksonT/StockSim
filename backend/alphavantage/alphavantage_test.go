@@ -10,7 +10,7 @@ func TestGetQuoteOf(t *testing.T) {
 	mockResponse := []byte(`{
     "Global Quote": {
         "01. symbol": "MSFT",
-        "02. open": "145.3400",
+        "02. open": "145.3400",githu
         "03. high": "146.4200",
         "04. low": "144.7300",
         "05. price": "146.1100",

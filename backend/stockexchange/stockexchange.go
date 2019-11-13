@@ -2,13 +2,14 @@ package stockexchange
 
 import (
 	"errors"
+	"github.com/NicksonT/StockSim/backend/stock"
 )
 
 type StockExchange struct {
-	stocks map[string]Stock
+	stocks map[string]stock.Stock
 }
 
-func (s *StockExchange) ViewInfo(st string) (*Stock, error) {
+func (s *StockExchange) ViewInfo(st string) (*stock.Stock, error) {
 
 	stock, found := s.stocks[st]
 	if found != true {
