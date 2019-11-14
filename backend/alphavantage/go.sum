@@ -1,5 +1,8 @@
 github.com/NicksonT/StockSim v0.0.0-20191113120935-a0019881dc0c h1:kPHzgBocIivJXEc629qKWXSfFx1xSHNIawsp9kZItc0=
 github.com/NicksonT/StockSim v0.0.0-20191113120935-a0019881dc0c/go.mod h1:Nds9kdreDmKWcDsmS3ZcA06n/xumVsWY8Qb7WMY/m54=
+github.com/NicksonT/StockSim v0.0.0-20191114120223-391761fdde85 h1:OsfKDWzvYcLjqZfqnMOy8OawyOeD8HPG//T6JG1jacc=
+github.com/NicksonT/StockSim/backend/stock v0.0.0-20191114120223-391761fdde85 h1:MRaT4GtVqr0xdelf4Wcn7qSfsiw2Jxa4zADeBG6H4aE=
+github.com/NicksonT/StockSim/backend/stock v0.0.0-20191114120223-391761fdde85/go.mod h1:7gNYvXXDMNSdBN7tSiJiGg05XZpfHKakfNpB+LNObOI=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/karupanerura/go-mock-http-response v0.0.0-20171201120521-7c242a447d45 h1:XSik/ETzj52cVbZcv7tJuUFX14XzvRX0te26UaKY0Aw=

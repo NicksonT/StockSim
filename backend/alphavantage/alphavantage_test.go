@@ -1,6 +1,7 @@
 package alphavantage
 
 import (
+	"github.com/NicksonT/StockSim/backend/stock"
 	"github.com/karupanerura/go-mock-http-response"
 	"github.com/stretchr/testify/assert"
 	"testing"
@@ -10,7 +11,7 @@ func TestGetQuoteOf(t *testing.T) {
 	mockResponse := []byte(`{
     "Global Quote": {
         "01. symbol": "MSFT",
-        "02. open": "145.3400",githu
+        "02. open": "145.3400",
         "03. high": "146.4200",
         "04. low": "144.7300",
         "05. price": "146.1100",
@@ -22,8 +23,8 @@ func TestGetQuoteOf(t *testing.T) {
     }
 }`)
 
-	expected := Stock{Symbol: "MSFT", Price: "146.1100"}
-	actual := Stock{}
+	expected := stock.Stock{Symbol: "MSFT", Price: "146.1100"}
+	actual := stock.Stock{}
 	mock := AlphaVantage{}
 	c := mockhttp.NewResponseMock(200, nil, mockResponse).MakeClient()
 	mock.GetQuoteOf("MSFT", &actual, *c)
